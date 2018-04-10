@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Props 3.png-e2ac5f24d2a6a58723f9fb1557e0308c.stex"
+
+[deps]
+
+source_file="res://media/other/Props 3.png"
+source_md5="c115829c991ebccf33913c06fe299a58"
+
+dest_files=[ "res://.import/Props 3.png-e2ac5f24d2a6a58723f9fb1557e0308c.stex" ]
+dest_md5="8e71ea8c1c971715c3912867f3717a15"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

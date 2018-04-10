@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Books 2.png-a060ae052a7aa24e4c3fd652245162f8.stex"
+
+[deps]
+
+source_file="res://media/other/Books 2.png"
+source_md5="7b4fd2a78019c3638fac3e369a205b39"
+
+dest_files=[ "res://.import/Books 2.png-a060ae052a7aa24e4c3fd652245162f8.stex" ]
+dest_md5="635d68887b0112b832ed473bcaa3e1c0"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

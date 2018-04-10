@@ -1,0 +1,102 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://scenes/objs/Background.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/objs/NodeConvFlat.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/objs/NodeBall.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/objs/NodeFloor1.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scripts/ClickSpot.gd" type="Script" id=5]
+[ext_resource path="res://scenes/objs/NodeHangingBall.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes/objs/NodeStairs.tscn" type="PackedScene" id=7]
+[ext_resource path="res://scenes/objs/FloorPlatform2.tscn" type="PackedScene" id=8]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10 )
+
+[node name="Main" type="Node2D" index="0"]
+
+_sections_unfolded = [ "Transform" ]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Background" parent="." index="0" instance=ExtResource( 1 )]
+
+_sections_unfolded = [ "Offset", "Transform" ]
+
+[node name="NodeConvFlat" parent="." index="1" instance=ExtResource( 2 )]
+
+position = Vector2( 310, 280 )
+
+[node name="NodeBall" parent="." index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 750, 90 )
+
+[node name="NodeFloor1" parent="." index="3" instance=ExtResource( 4 )]
+
+position = Vector2( 414.133, 283.266 )
+
+[node name="ClickSpot" type="Area2D" parent="." index="4"]
+
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+script = ExtResource( 5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickSpot" index="0"]
+
+position = Vector2( 650, 390 )
+scale = Vector2( 6.22842, 4.92915 )
+shape = SubResource( 1 )
+
+[node name="NodeRope" parent="." index="5" instance=ExtResource( 6 )]
+
+position = Vector2( 710, 120 )
+
+[node name="NodeStairs" parent="." index="6" instance=ExtResource( 7 )]
+
+position = Vector2( 700, 240 )
+
+[node name="FloorPlatforms" parent="." index="7" instance=ExtResource( 8 )]
+
+editor/display_folded = true
+position = Vector2( 0, 582 )
+
+[node name="FloorPlatform3" parent="FloorPlatforms" index="2" instance=ExtResource( 8 )]
+
+position = Vector2( 78, 0 )
+scale = Vector2( 1, 1 )
+
+[node name="FloorPlatform4" parent="FloorPlatforms" index="3" instance=ExtResource( 8 )]
+
+position = Vector2( 156, 0 )
+scale = Vector2( 1, 1 )
+
+[node name="FloorPlatform5" parent="FloorPlatforms" index="4" instance=ExtResource( 8 )]
+
+position = Vector2( 234, 0 )
+scale = Vector2( 1, 1 )
+
+[node name="FloorPlatform6" parent="FloorPlatforms" index="5" instance=ExtResource( 8 )]
+
+position = Vector2( 312, 0 )
+scale = Vector2( 1, 1 )
+
+[node name="FloorPlatform7" parent="FloorPlatforms" index="6" instance=ExtResource( 8 )]
+
+position = Vector2( 390, 0 )
+scale = Vector2( 1, 1 )
+
+[node name="FloorPlatform8" parent="FloorPlatforms" index="7" instance=ExtResource( 8 )]
+
+position = Vector2( 468, 0 )
+scale = Vector2( 1, 1 )
+
+[connection signal="input_event" from="ClickSpot" to="ClickSpot" method="_on_ClickSpot_input_event"]
+
+

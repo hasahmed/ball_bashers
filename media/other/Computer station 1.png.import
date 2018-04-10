@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Computer station 1.png-b948b1b2b77282730b733ef64f3e2874.stex"
+
+[deps]
+
+source_file="res://media/other/Computer station 1.png"
+source_md5="bcf1a88edfcc5685515481a27106bf75"
+
+dest_files=[ "res://.import/Computer station 1.png-b948b1b2b77282730b733ef64f3e2874.stex" ]
+dest_md5="6c99bd92c8354b20d75a3145aec30536"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

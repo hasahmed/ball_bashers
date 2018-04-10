@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Biorganic device.png-281d993a66a491cf2a5312d159fc8029.stex"
+
+[deps]
+
+source_file="res://media/other/Biorganic device.png"
+source_md5="ab9c2c34baebcd0ad295659558201d3a"
+
+dest_files=[ "res://.import/Biorganic device.png-281d993a66a491cf2a5312d159fc8029.stex" ]
+dest_md5="682fb2a3f77067e02cde8f93bf59c5a7"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

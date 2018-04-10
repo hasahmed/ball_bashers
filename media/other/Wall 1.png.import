@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Wall 1.png-0758c9915278af295df62691e341bd11.stex"
+
+[deps]
+
+source_file="res://media/other/Wall 1.png"
+source_md5="2814a751d5ea595d2853a85690cc1844"
+
+dest_files=[ "res://.import/Wall 1.png-0758c9915278af295df62691e341bd11.stex" ]
+dest_md5="b2abb1405e07f1af87cd5b9035d3ec6a"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

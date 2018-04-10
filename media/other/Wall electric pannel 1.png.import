@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Wall electric pannel 1.png-70fb9c34e8d34c3fdb7f68a70d51fbd2.stex"
+
+[deps]
+
+source_file="res://media/other/Wall electric pannel 1.png"
+source_md5="b5a507c8f387454f91ea23d52d76bc5d"
+
+dest_files=[ "res://.import/Wall electric pannel 1.png-70fb9c34e8d34c3fdb7f68a70d51fbd2.stex" ]
+dest_md5="4327f2b2fadfeaae8abe6ab4261ba830"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

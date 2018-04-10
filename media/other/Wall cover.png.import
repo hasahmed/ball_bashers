@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Wall cover.png-6c21d5c227d9737f4ed624a9d9afe5b5.stex"
+
+[deps]
+
+source_file="res://media/other/Wall cover.png"
+source_md5="e5699fa1544b508b8ba8d03110d90a21"
+
+dest_files=[ "res://.import/Wall cover.png-6c21d5c227d9737f4ed624a9d9afe5b5.stex" ]
+dest_md5="c81276c2af1d08a853a7b6c3a37aa137"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

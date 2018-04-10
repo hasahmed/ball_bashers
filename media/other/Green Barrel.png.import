@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Green Barrel.png-bf1009d71be2bd5def7ed1d6285bc416.stex"
+
+[deps]
+
+source_file="res://media/other/Green Barrel.png"
+source_md5="74dc6eaa2708e7db71764ebd57d34e2c"
+
+dest_files=[ "res://.import/Green Barrel.png-bf1009d71be2bd5def7ed1d6285bc416.stex" ]
+dest_md5="09631a5b97722b169252632a3f3c568d"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Calque 18.png-022e266d67ec9a91d5cb570b6a7203cf.stex"
+
+[deps]
+
+source_file="res://media/other/Calque 18.png"
+source_md5="391d2ac04a68e7317c0b858e4b63689c"
+
+dest_files=[ "res://.import/Calque 18.png-022e266d67ec9a91d5cb570b6a7203cf.stex" ]
+dest_md5="6f116b281131b401a636e312e03b0cce"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

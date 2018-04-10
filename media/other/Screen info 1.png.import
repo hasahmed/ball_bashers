@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Screen info 1.png-4aeec12faf48b3cbdbc2a8b2b46ca15e.stex"
+
+[deps]
+
+source_file="res://media/other/Screen info 1.png"
+source_md5="3e4bbdc01091c180cc9d5a2a59f85515"
+
+dest_files=[ "res://.import/Screen info 1.png-4aeec12faf48b3cbdbc2a8b2b46ca15e.stex" ]
+dest_md5="0b542e7b5ecb2f12202292173b393f0d"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Chair 2.png-5adfc05439f7d704e030eb5f9d37d855.stex"
+
+[deps]
+
+source_file="res://media/other/Chair 2.png"
+source_md5="fa5fe4fe1be164d45c445cd1d413a127"
+
+dest_files=[ "res://.import/Chair 2.png-5adfc05439f7d704e030eb5f9d37d855.stex" ]
+dest_md5="2a21239e498cd74d479dc9c4e272e369"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

@@ -1,0 +1,108 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://media/other/Wall 1.png" type="Texture" id=1]
+
+[node name="Background" type="Node2D"]
+
+modulate = Color( 0.464844, 0.464844, 0.464844, 1 )
+scale = Vector2( 2, 2 )
+z_index = -1
+_sections_unfolded = [ "Offset" ]
+
+[node name="Wall 5" type="Sprite" parent="." index="0"]
+
+position = Vector2( -3.69308, 110 )
+z_index = -1
+texture = ExtResource( 1 )
+centered = false
+_sections_unfolded = [ "Transform", "Visibility" ]
+
+[node name="Wall 12" type="Sprite" parent="." index="1"]
+
+position = Vector2( -3.69308, 0 )
+z_index = -1
+texture = ExtResource( 1 )
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Wall 3" type="Sprite" parent="." index="2"]
+
+position = Vector2( 256.307, 220 )
+z_index = -1
+texture = ExtResource( 1 )
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Wall 8" type="Sprite" parent="." index="3"]
+
+position = Vector2( 256.307, 110 )
+z_index = -1
+texture = ExtResource( 1 )
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Wall 11" type="Sprite" parent="." index="4"]
+
+position = Vector2( 256.307, 0 )
+z_index = -1
+texture = ExtResource( 1 )
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Wall 2" type="Sprite" parent="." index="5"]
+
+position = Vector2( 126.307, 220 )
+z_index = -1
+texture = ExtResource( 1 )
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Wall 13" type="Sprite" parent="." index="6"]
+
+position = Vector2( -3.69308, 220 )
+z_index = -1
+texture = ExtResource( 1 )
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Wall 7" type="Sprite" parent="." index="7"]
+
+position = Vector2( 126.307, 110 )
+z_index = -1
+texture = ExtResource( 1 )
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Wall 10" type="Sprite" parent="." index="8"]
+
+position = Vector2( 126.307, 0 )
+z_index = -1
+texture = ExtResource( 1 )
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Wall 4" type="Sprite" parent="." index="9"]
+
+position = Vector2( 386.307, 220 )
+z_index = -1
+texture = ExtResource( 1 )
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Wall 6" type="Sprite" parent="." index="10"]
+
+position = Vector2( 386.307, 110 )
+z_index = -1
+texture = ExtResource( 1 )
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Wall 9" type="Sprite" parent="." index="11"]
+
+position = Vector2( 386.307, 0 )
+z_index = -1
+texture = ExtResource( 1 )
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+

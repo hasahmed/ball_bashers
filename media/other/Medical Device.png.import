@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Medical Device.png-278e659e6af416b73d8a9f79cf3bf13b.stex"
+
+[deps]
+
+source_file="res://media/other/Medical Device.png"
+source_md5="12c2be51c1475b0f9c6a6563948923a2"
+
+dest_files=[ "res://.import/Medical Device.png-278e659e6af416b73d8a9f79cf3bf13b.stex" ]
+dest_md5="08ddf3e8deaf4f189184db78b636b500"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Pillars 1.png-46f9a1bc161695b0ca98152716dd6fad.stex"
+
+[deps]
+
+source_file="res://media/other/Pillars 1.png"
+source_md5="88c9dad7decd79ef8875e850fadf8070"
+
+dest_files=[ "res://.import/Pillars 1.png-46f9a1bc161695b0ca98152716dd6fad.stex" ]
+dest_md5="4c31b3394e960dcc39361ac58f3e065b"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

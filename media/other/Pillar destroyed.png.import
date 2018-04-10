@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Pillar destroyed.png-ae570c918cac80b69c04c801c918d961.stex"
+
+[deps]
+
+source_file="res://media/other/Pillar destroyed.png"
+source_md5="d42b3e7ef4786633429993fcd372266c"
+
+dest_files=[ "res://.import/Pillar destroyed.png-ae570c918cac80b69c04c801c918d961.stex" ]
+dest_md5="8d0db593de0c4c668060e6fc625d32fb"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

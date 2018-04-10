@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Wall with glass 1.png-06f66352af764eed33bfc445ed0549b8.stex"
+
+[deps]
+
+source_file="res://media/other/Wall with glass 1.png"
+source_md5="4cb14dad2909fc47ca0ced1ae0cfd008"
+
+dest_files=[ "res://.import/Wall with glass 1.png-06f66352af764eed33bfc445ed0549b8.stex" ]
+dest_md5="27f57a654fdb7f9c75a923353d41e484"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

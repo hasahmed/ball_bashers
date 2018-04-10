@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Laboratory device.png-ef371f5399725d5deed3d870bbc96350.stex"
+
+[deps]
+
+source_file="res://media/other/Laboratory device.png"
+source_md5="4f83eb8110f927c0abbe879d7bdfc5f7"
+
+dest_files=[ "res://.import/Laboratory device.png-ef371f5399725d5deed3d870bbc96350.stex" ]
+dest_md5="c647b795210de1827a1b9f932ce4e0b3"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0
