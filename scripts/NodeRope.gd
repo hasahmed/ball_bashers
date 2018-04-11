@@ -1,13 +1,11 @@
 extends PinJoint2D
 
-# class member variables go here, for example:
-# var a = 2
-# var b = "textvar"
+enum BallColor {RED, YELLOW, GREEN, WILD}
+export(BallColor) var ball_color = WILD
 
 func _ready():
-	# Called every time the node is added to the scene.
-	# Initialization here
 	pass
+	set_ball_color(ball_color)
 
 #func _process(delta):
 #	# Called every frame. Delta is time since last frame.
@@ -22,3 +20,6 @@ func _on_area2D_input_event(viewport, event, event_shape_idx):
 		elif not event.pressed:
 			$rope_rigid_body/ball_joint.queue_free()
 			#event was mouse_up
+
+func set_ball_color(val):
+	$rope_rigid_body/NodeBall.color = val

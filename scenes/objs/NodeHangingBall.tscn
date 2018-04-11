@@ -28,9 +28,11 @@ bias = 0.0
 disable_collision = true
 softness = 0.0
 script = ExtResource( 1 )
+ball_color = null
 
 [node name="wire_hook_sprite" type="Sprite" parent="." index="0"]
 
+editor/display_folded = true
 position = Vector2( 0, 20 )
 texture = ExtResource( 2 )
 
@@ -100,11 +102,7 @@ position = Vector2( -0.0835192, 0.0436935 )
 scale = Vector2( 0.502647, 1.65385 )
 shape = SubResource( 2 )
 
-[node name="NodeBall" parent="rope_rigid_body" index="2" instance=ExtResource( 4 )]
-
-position = Vector2( 0.476257, 37.6297 )
-
-[node name="ball_joint" type="PinJoint2D" parent="rope_rigid_body" index="3"]
+[node name="ball_joint" type="PinJoint2D" parent="rope_rigid_body" index="2"]
 
 position = Vector2( 0.476288, 38.1012 )
 node_a = NodePath("..")
@@ -112,6 +110,10 @@ node_b = NodePath("../NodeBall")
 bias = 0.0
 disable_collision = true
 softness = 0.0
+
+[node name="NodeBall" parent="rope_rigid_body" index="3" instance=ExtResource( 4 )]
+
+position = Vector2( 0.476257, 37.6297 )
 
 [connection signal="input_event" from="rope_rigid_body/wire_sprite/Area2D" to="." method="_on_area2D_input_event"]
 
