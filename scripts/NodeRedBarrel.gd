@@ -1,4 +1,3 @@
-tool
 extends RigidBody2D
 enum BarrelColor {RED, YELLOW, GREEN}
 export(BarrelColor) var barrel_color = RED setget set_color, get_color
@@ -6,20 +5,19 @@ export(BarrelColor) var barrel_color = RED setget set_color, get_color
 # class member variables go here, for example:
 # var a = 2
 # var b = "textvar"
+var globals
 
 func _ready():
-	# Called every time the node is added to the scene.
-	# Initialization here
-	pass
-
-#func _process(delta):
-#	# Called every frame. Delta is time since last frame.
-#	# Update game logic here.
-#	pass
+	globals = $'/root/Main/Globals'
+	print(barrel_color)
 
 func set_color(val):
 	all_invisible()
+	if !val:
+		val = RED
 	barrel_color = val
+	if !has_node('barrel_red_sprite'):
+		return
 	match val:
 		RED:
 			$barrel_red_sprite.visible = true
@@ -37,3 +35,15 @@ func all_invisible():
 	for child in children:
 		if child.is_in_group("barrel_sprite"):
 			child.visible = false
+
+
+func ball_has_collided(ball_area):
+
+	print('ball_color: %s, my_color %s' %[ball_area.get_parent().color, barrel_color])
+
+	if ball_area.get_parent().color == self.barrel_color:
+		globals.dec_ball()
+	else:
+		globals.invalid_ball()
+
+	ball_area.get_parent().queue_free()

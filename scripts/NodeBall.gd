@@ -1,3 +1,4 @@
+tool
 extends RigidBody2D
 
 var follow_mouse = false
@@ -6,9 +7,8 @@ export(BallColor) var color = WILD setget set_color, get_color
 
 
 func _ready():
-	pass
-	# set_color(color)
-
+	if color != WILD:
+		$'/root/Main/Globals'.add_ball()
 
 func _process(delta):
 	if follow_mouse:

@@ -1,0 +1,233 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://scripts/NodeRope.gd" type="Script" id=1]
+[ext_resource path="res://media/used/wireHook.png" type="Texture" id=2]
+[ext_resource path="res://media/used/wire.png" type="Texture" id=3]
+[ext_resource path="res://objs/NodeBall.tscn" type="PackedScene" id=4]
+
+[sub_resource type="CircleShape2D" id=1]
+
+custom_solver_bias = 0.0
+radius = 10.0
+
+[sub_resource type="RectangleShape2D" id=2]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10 )
+
+[sub_resource type="RectangleShape2D" id=3]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 19.9859 )
+
+[node name="NodeRopeDuo" type="Node2D"]
+
+position = Vector2( 0, -5 )
+script = ExtResource( 1 )
+_sections_unfolded = [ "Transform" ]
+__meta__ = {
+"_edit_group_": true
+}
+ball_color = null
+
+[node name="main_joint2" type="PinJoint2D" parent="." index="0"]
+
+editor/display_folded = true
+position = Vector2( 84.8263, 7.63781 )
+rotation = 0.785398
+node_a = NodePath("wire_hook_sprite/rope_pin_static_body")
+node_b = NodePath("rope_rigid_body")
+bias = 0.0
+disable_collision = true
+softness = 0.0
+_sections_unfolded = [ "Transform" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="wire_hook_sprite" type="Sprite" parent="main_joint2" index="0"]
+
+position = Vector2( 0, 20 )
+texture = ExtResource( 2 )
+
+[node name="rope_pin_static_body" type="StaticBody2D" parent="main_joint2/wire_hook_sprite" index="0"]
+
+position = Vector2( 0.114243, -19.3072 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="main_joint2/wire_hook_sprite/rope_pin_static_body" index="0"]
+
+shape = SubResource( 1 )
+
+[node name="rope_rigid_body" type="RigidBody2D" parent="main_joint2" index="1"]
+
+position = Vector2( 0, 30 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+mode = 0
+mass = 1.0
+friction = 1.0
+bounce = 0.0
+gravity_scale = 1.0
+custom_integrator = false
+continuous_cd = 0
+contacts_reported = 0
+contact_monitor = false
+sleeping = false
+can_sleep = true
+linear_velocity = Vector2( 0, 0 )
+linear_damp = -1.0
+angular_velocity = 0.0
+angular_damp = -1.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="right_wire" type="Sprite" parent="main_joint2/rope_rigid_body" index="0"]
+
+texture = ExtResource( 3 )
+
+[node name="Area2D" type="Area2D" parent="main_joint2/rope_rigid_body/right_wire" index="0"]
+
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="main_joint2/rope_rigid_body/right_wire/Area2D" index="0"]
+
+position = Vector2( 0, 0.431723 )
+scale = Vector2( 1, 3.14472 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="main_joint2/rope_rigid_body" index="1"]
+
+position = Vector2( -0.0835192, 0.0436935 )
+scale = Vector2( 0.502647, 1.65385 )
+shape = SubResource( 3 )
+
+[node name="right_ball_joint" type="PinJoint2D" parent="main_joint2/rope_rigid_body" index="2"]
+
+position = Vector2( 0.476288, 38.1012 )
+node_a = NodePath("..")
+node_b = NodePath("../../../main_joint/rope_rigid_body/NodeBall")
+bias = 0.0
+disable_collision = true
+softness = 0.0
+
+[node name="main_joint" type="PinJoint2D" parent="." index="1"]
+
+editor/display_folded = true
+position = Vector2( -11.881, 6.78916 )
+rotation = -0.785398
+node_a = NodePath("wire_hook_sprite/rope_pin_static_body")
+node_b = NodePath("rope_rigid_body")
+bias = 0.0
+disable_collision = true
+softness = 0.0
+_sections_unfolded = [ "Transform" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="wire_hook_sprite" type="Sprite" parent="main_joint" index="0"]
+
+editor/display_folded = true
+position = Vector2( 0, 20 )
+texture = ExtResource( 2 )
+
+[node name="rope_pin_static_body" type="StaticBody2D" parent="main_joint/wire_hook_sprite" index="0"]
+
+position = Vector2( 0.114243, -19.3072 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="main_joint/wire_hook_sprite/rope_pin_static_body" index="0"]
+
+shape = SubResource( 1 )
+
+[node name="rope_rigid_body" type="RigidBody2D" parent="main_joint" index="1"]
+
+position = Vector2( 0, 30 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+mode = 0
+mass = 1.0
+friction = 1.0
+bounce = 0.0
+gravity_scale = 1.0
+custom_integrator = false
+continuous_cd = 0
+contacts_reported = 0
+contact_monitor = false
+sleeping = false
+can_sleep = true
+linear_velocity = Vector2( 0, 0 )
+linear_damp = -1.0
+angular_velocity = 0.0
+angular_damp = -1.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="left_wire" type="Sprite" parent="main_joint/rope_rigid_body" index="0"]
+
+texture = ExtResource( 3 )
+
+[node name="Area2D" type="Area2D" parent="main_joint/rope_rigid_body/left_wire" index="0"]
+
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="main_joint/rope_rigid_body/left_wire/Area2D" index="0"]
+
+position = Vector2( 0, 0.431723 )
+scale = Vector2( 1, 3.14472 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="main_joint/rope_rigid_body" index="1"]
+
+position = Vector2( -0.0835192, 0.0436935 )
+scale = Vector2( 0.502647, 1.65385 )
+shape = SubResource( 3 )
+
+[node name="left_ball_joint" type="PinJoint2D" parent="main_joint/rope_rigid_body" index="2"]
+
+position = Vector2( 0.476288, 38.1012 )
+node_a = NodePath("..")
+node_b = NodePath("../NodeBall")
+bias = 0.0
+disable_collision = true
+softness = 0.0
+
+[node name="NodeBall" parent="main_joint/rope_rigid_body" index="3" instance=ExtResource( 4 )]
+
+position = Vector2( 0.476257, 37.6297 )
+color = null
+
+[connection signal="input_event" from="main_joint2/rope_rigid_body/right_wire/Area2D" to="." method="right_kill"]
+
+[connection signal="input_event" from="main_joint/rope_rigid_body/left_wire/Area2D" to="." method="_on_Area2D_input_event"]
+
+

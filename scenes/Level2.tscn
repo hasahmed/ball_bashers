@@ -1,15 +1,10 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://scripts/Globals.gd" type="Script" id=1]
 [ext_resource path="res://objs/Background.tscn" type="PackedScene" id=2]
-[ext_resource path="res://objs/NodeFloor1.tscn" type="PackedScene" id=3]
-[ext_resource path="res://objs/Blocker.tscn" type="PackedScene" id=4]
-[ext_resource path="res://objs/NodeStairs.tscn" type="PackedScene" id=5]
-[ext_resource path="res://objs/FloorPlatform2.tscn" type="PackedScene" id=6]
-[ext_resource path="res://objs/NodeDuoHangingBall.tscn" type="PackedScene" id=7]
-[ext_resource path="res://scripts/button_reset.gd" type="Script" id=8]
-[ext_resource path="res://objs/level_select.tscn" type="PackedScene" id=9]
-[ext_resource path="res://objs/NodeBarrel.tscn" type="PackedScene" id=10]
+[ext_resource path="res://objs/FloorPlatform2.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scripts/button_reset.gd" type="Script" id=4]
+[ext_resource path="res://objs/level_select.tscn" type="PackedScene" id=5]
 
 [node name="Main" type="Node2D"]
 
@@ -20,9 +15,8 @@ __meta__ = {
 
 [node name="Globals" type="Node2D" parent="." index="0"]
 
-editor/display_folded = true
 script = ExtResource( 1 )
-next_level = "res://scenes/Level2.tscn"
+next_level = null
 
 [node name="label_win" type="RichTextLabel" parent="Globals" index="0"]
 
@@ -97,66 +91,41 @@ autostart = false
 
 _sections_unfolded = [ "Offset", "Transform" ]
 
-[node name="NodeFloor1" parent="." index="2" instance=ExtResource( 3 )]
-
-editor/display_folded = true
-position = Vector2( 542, 276 )
-scale = Vector2( 2.76562, 2 )
-
-[node name="Blocker" parent="NodeFloor1" index="2" instance=ExtResource( 4 )]
-
-position = Vector2( 28.565, -11 )
-scale = Vector2( 0.361582, 0.5 )
-
-[node name="NodeStairs" parent="." index="3" instance=ExtResource( 5 )]
-
-position = Vector2( 625, 347 )
-
-[node name="NodeStairs2" parent="." index="4" instance=ExtResource( 5 )]
-
-position = Vector2( 230.913, 451.855 )
-scale = Vector2( -1, 1 )
-
-[node name="FloorPlatforms" parent="." index="5" instance=ExtResource( 6 )]
+[node name="FloorPlatforms" parent="." index="2" instance=ExtResource( 3 )]
 
 position = Vector2( 0, 582 )
 
-[node name="FloorPlatform3" parent="FloorPlatforms" index="2" instance=ExtResource( 6 )]
+[node name="FloorPlatform3" parent="FloorPlatforms" index="2" instance=ExtResource( 3 )]
 
 position = Vector2( 78, 0 )
 scale = Vector2( 1, 1 )
 
-[node name="FloorPlatform4" parent="FloorPlatforms" index="3" instance=ExtResource( 6 )]
+[node name="FloorPlatform4" parent="FloorPlatforms" index="3" instance=ExtResource( 3 )]
 
 position = Vector2( 156, 0 )
 scale = Vector2( 1, 1 )
 
-[node name="FloorPlatform5" parent="FloorPlatforms" index="4" instance=ExtResource( 6 )]
+[node name="FloorPlatform5" parent="FloorPlatforms" index="4" instance=ExtResource( 3 )]
 
 position = Vector2( 234, 0 )
 scale = Vector2( 1, 1 )
 
-[node name="FloorPlatform6" parent="FloorPlatforms" index="5" instance=ExtResource( 6 )]
+[node name="FloorPlatform6" parent="FloorPlatforms" index="5" instance=ExtResource( 3 )]
 
 position = Vector2( 312, 0 )
 scale = Vector2( 1, 1 )
 
-[node name="FloorPlatform7" parent="FloorPlatforms" index="6" instance=ExtResource( 6 )]
+[node name="FloorPlatform7" parent="FloorPlatforms" index="6" instance=ExtResource( 3 )]
 
 position = Vector2( 390, 0 )
 scale = Vector2( 1, 1 )
 
-[node name="FloorPlatform8" parent="FloorPlatforms" index="7" instance=ExtResource( 6 )]
+[node name="FloorPlatform8" parent="FloorPlatforms" index="7" instance=ExtResource( 3 )]
 
 position = Vector2( 468, 0 )
 scale = Vector2( 1, 1 )
 
-[node name="NodeRopeDuo" parent="." index="6" instance=ExtResource( 7 )]
-
-position = Vector2( 454, 139 )
-ball_color = 2
-
-[node name="button_reset" type="Button" parent="." index="7"]
+[node name="button_reset" type="Button" parent="." index="3"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -180,23 +149,9 @@ group = null
 text = "Reset"
 flat = false
 align = 1
-script = ExtResource( 8 )
+script = ExtResource( 4 )
 
-[node name="level_select" parent="." index="8" instance=ExtResource( 9 )]
-
-[node name="NodeBarrel" parent="." index="9" instance=ExtResource( 10 )]
-
-position = Vector2( 445, 543 )
-barrel_color = 2
-
-[node name="NodeBarrel2" parent="." index="10" instance=ExtResource( 10 )]
-
-position = Vector2( 334, 544 )
-
-[node name="NodeFloor2" parent="." index="11" instance=ExtResource( 3 )]
-
-position = Vector2( 399.976, 302.905 )
-rotation = -0.436332
+[node name="level_select" parent="." index="4" instance=ExtResource( 5 )]
 
 [connection signal="timeout" from="Globals/next_level_delay" to="Globals" method="_on_next_level_delay_timeout"]
 

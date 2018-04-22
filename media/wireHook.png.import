@@ -10,7 +10,7 @@ source_file="res://media/wireHook.png"
 source_md5="6e51af90f99e4c7ba9fb1acca1f22bd4"
 
 dest_files=[ "res://.import/wireHook.png-3e207909957dd7652640e14130300834.stex" ]
-dest_md5="0ed5e083a0d66a5950b721b2d10eb1cd"
+dest_md5="98123743b8a7ff5c12f780f8c4e38c08"
 
 [params]
 
@@ -19,7 +19,7 @@ compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
