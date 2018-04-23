@@ -15,7 +15,6 @@ func add_ball():
 	tot_balls += 1
 
 func dec_ball():
-	print('tot_balls =', tot_balls)
 	tot_balls -= 1
 	check_win()
 

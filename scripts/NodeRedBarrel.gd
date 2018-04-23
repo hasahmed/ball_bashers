@@ -9,7 +9,6 @@ var globals
 
 func _ready():
 	globals = $'/root/Main/Globals'
-	print(barrel_color)
 
 func set_color(val):
 	all_invisible()
@@ -38,9 +37,6 @@ func all_invisible():
 
 
 func ball_has_collided(ball_area):
-
-	print('ball_color: %s, my_color %s' %[ball_area.get_parent().color, barrel_color])
-
 	if ball_area.get_parent().color == self.barrel_color:
 		globals.dec_ball()
 	else:

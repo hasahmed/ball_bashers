@@ -1,11 +1,13 @@
 extends Node2D
 
 var giant_ball
+export var weight = 980
 
 
 func _ready():
 	giant_ball = preload('res://objs/NodeGiantBall.tscn')
 	$NodeBall.color = $NodeBall.BallColor.WILD
+	$NodeBall.weight = weight
 
 func _on_click_area_input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton:

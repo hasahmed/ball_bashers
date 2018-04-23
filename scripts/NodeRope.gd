@@ -49,7 +49,6 @@ func _on_Area2D_input_event(viewport, event, event_shape_idx):
 # 			pass
 
 # func _on_Area2D_input_event(viewport, event, event_shape_idx):
-# 	print(event)
 func set_ball_color(val):
 	$main_joint/rope_rigid_body/NodeBall.color = val
 

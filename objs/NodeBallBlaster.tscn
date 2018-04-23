@@ -28,7 +28,7 @@ extents = Vector2( 28, 36 )
 custom_solver_bias = 0.0
 extents = Vector2( 8.90427, 1 )
 
-[node name="NodeBallBlaster" type="RigidBody2D" index="0"]
+[node name="NodeBallBlaster" type="RigidBody2D"]
 
 input_pickable = false
 collision_layer = 1
