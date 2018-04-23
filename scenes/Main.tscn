@@ -99,7 +99,6 @@ _sections_unfolded = [ "Offset", "Transform" ]
 
 [node name="NodeFloor1" parent="." index="2" instance=ExtResource( 3 )]
 
-editor/display_folded = true
 position = Vector2( 542, 276 )
 scale = Vector2( 2.76562, 2 )
 
@@ -119,6 +118,7 @@ scale = Vector2( -1, 1 )
 
 [node name="FloorPlatforms" parent="." index="5" instance=ExtResource( 6 )]
 
+editor/display_folded = true
 position = Vector2( 0, 582 )
 
 [node name="FloorPlatform3" parent="FloorPlatforms" index="2" instance=ExtResource( 6 )]

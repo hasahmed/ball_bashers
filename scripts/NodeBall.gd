@@ -7,8 +7,9 @@ export(BallColor) var color = WILD setget set_color, get_color
 
 
 func _ready():
-	if color != WILD:
+	if color == RED || color == YELLOW || color == GREEN:
 		$'/root/Main/Globals'.add_ball()
+		print('from NodeBall.gd', color)
 
 func _process(delta):
 	if follow_mouse:

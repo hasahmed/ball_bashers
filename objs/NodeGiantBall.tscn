@@ -24,7 +24,7 @@ input_pickable = false
 collision_layer = 1
 collision_mask = 1
 mode = 0
-mass = 20.0
+mass = 100.0
 friction = 1.0
 bounce = 0.0
 gravity_scale = 1.0
@@ -44,8 +44,7 @@ color = 3
 
 [node name="RigidBody2D" type="CollisionShape2D" parent="." index="0"]
 
-editor/display_folded = true
-scale = Vector2( 0.15, 0.15 )
+scale = Vector2( 0.3, 0.3 )
 shape = SubResource( 1 )
 _sections_unfolded = [ "Transform" ]
 
@@ -93,7 +92,9 @@ audio_bus_name = "Master"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ball_area" index="0"]
 
+scale = Vector2( 2, 2 )
 shape = SubResource( 2 )
+_sections_unfolded = [ "Transform" ]
 
 [connection signal="input_event" from="ball_area" to="." method="_input_event"]
 

@@ -83,7 +83,7 @@ text = "Level 3"
 flat = false
 align = 1
 script = ExtResource( 1 )
-level = null
+level = "res://scenes/Level3.tscn"
 
 [connection signal="button_up" from="level_1" to="level_1" method="_on_button_up"]
 

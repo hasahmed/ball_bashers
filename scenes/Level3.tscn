@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://scripts/Globals.gd" type="Script" id=1]
 [ext_resource path="res://objs/Background.tscn" type="PackedScene" id=2]
@@ -9,7 +9,8 @@
 [ext_resource path="res://objs/NodeFloor1.tscn" type="PackedScene" id=7]
 [ext_resource path="res://objs/NodeBarrel.tscn" type="PackedScene" id=8]
 [ext_resource path="res://objs/NodeBallBlaster.tscn" type="PackedScene" id=9]
-[ext_resource path="res://objs/NodeHugeHangingBall.tscn" type="PackedScene" id=10]
+[ext_resource path="res://objs/NodeGiantBall.tscn" type="PackedScene" id=10]
+[ext_resource path="res://objs/SquareBlocker.tscn" type="PackedScene" id=11]
 
 [node name="Main" type="Node2D"]
 
@@ -22,7 +23,7 @@ __meta__ = {
 
 editor/display_folded = true
 script = ExtResource( 1 )
-next_level = "res://scenes/Level3.tscn"
+next_level = "res://scenes/LevelSelect.tscn"
 
 [node name="label_win" type="RichTextLabel" parent="Globals" index="0"]
 
@@ -164,50 +165,48 @@ script = ExtResource( 4 )
 
 [node name="NodeRope2" parent="." index="5" instance=ExtResource( 6 )]
 
-position = Vector2( 577, 169 )
+position = Vector2( 972, 52 )
 ball_color = 0
 
 [node name="NodeFloor1" parent="." index="6" instance=ExtResource( 7 )]
 
-position = Vector2( 774.417, 122.506 )
-rotation = 2.17195
+position = Vector2( 477.279, 136.973 )
+rotation = 2.87552
 scale = Vector2( 2.87901, 2 )
 
-[node name="NodeFloor3" parent="." index="7" instance=ExtResource( 7 )]
+[node name="NodeFloor4" parent="." index="7" instance=ExtResource( 7 )]
 
-position = Vector2( 610.418, 339.219 )
-rotation = 0.696409
+position = Vector2( 962.566, 226.221 )
+rotation = 5.84211
+scale = Vector2( 1.81003, 2 )
+
+[node name="NodeFloor3" parent="." index="8" instance=ExtResource( 7 )]
+
+position = Vector2( 337.861, 248.194 )
+rotation = 2.06145
 scale = Vector2( 2.87901, 2 )
 
-[node name="NodeFloor4" parent="." index="8" instance=ExtResource( 7 )]
+[node name="NodeFloor2" parent="." index="9" instance=ExtResource( 7 )]
 
-position = Vector2( 522.046, 498.252 )
-rotation = 0.696409
-scale = Vector2( 2.87901, 2 )
+position = Vector2( 663.833, 201.313 )
+scale = Vector2( 2.25523, 2 )
 
-[node name="NodeFloor5" parent="." index="9" instance=ExtResource( 7 )]
+[node name="NodeBarrel" parent="." index="10" instance=ExtResource( 8 )]
 
-position = Vector2( 414.14, 348.03 )
-rotation = 1.14197
-scale = Vector2( 2.87901, 2 )
+position = Vector2( 639.523, 152.876 )
 
-[node name="NodeFloor2" parent="." index="10" instance=ExtResource( 7 )]
+[node name="NodeBallBlaster" parent="." index="11" instance=ExtResource( 9 )]
 
-position = Vector2( 923.439, 193.437 )
-scale = Vector2( 1.47804, 2 )
+position = Vector2( 352, 544 )
+power = 1000
 
-[node name="NodeBarrel" parent="." index="11" instance=ExtResource( 8 )]
+[node name="NodeBall" parent="." index="12" instance=ExtResource( 10 )]
 
-position = Vector2( 924, 145 )
+position = Vector2( 351, 440 )
 
-[node name="NodeBallBlaster" parent="." index="12" instance=ExtResource( 9 )]
+[node name="Blocker" parent="." index="13" instance=ExtResource( 11 )]
 
-position = Vector2( 788, 544 )
-power = 350
-
-[node name="NodeHugeHangingBall" parent="." index="13" instance=ExtResource( 10 )]
-
-position = Vector2( 412, 32 )
+position = Vector2( 869, 516 )
 
 [connection signal="timeout" from="Globals/next_level_delay" to="Globals" method="_on_next_level_delay_timeout"]
 
