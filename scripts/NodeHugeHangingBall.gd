@@ -6,6 +6,7 @@ export var weight = 980
 
 func _ready():
 	giant_ball = preload('res://objs/NodeGiantBall.tscn')
+	$'/root/Main/Globals'.dec_ball()
 	$NodeBall.color = $NodeBall.BallColor.WILD
 	$NodeBall.weight = weight
 

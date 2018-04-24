@@ -50,7 +50,7 @@ func _on_Area2D_input_event(viewport, event, event_shape_idx):
 
 # func _on_Area2D_input_event(viewport, event, event_shape_idx):
 func set_ball_color(val):
-	$main_joint/rope_rigid_body/NodeBall.color = val
+	$main_joint/rope_rigid_body/NodeBall.set_color(val)
 
 
 # func _get_ball_pins_helper(pins_arr, child):

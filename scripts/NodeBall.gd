@@ -1,13 +1,14 @@
-tool
 extends RigidBody2D
 
 var follow_mouse = false
 enum BallColor {RED, YELLOW, GREEN, WILD}
-export(BallColor) var color = WILD setget set_color, get_color
+export(BallColor) var color = WILD
 
 
 func _ready():
-	if color == RED || color == YELLOW || color == GREEN:
+	print('thign ', color)
+	set_color(color)
+	if color != WILD:
 		$'/root/Main/Globals'.add_ball()
 		print('from NodeBall.gd', color)
 
@@ -19,7 +20,8 @@ func _process(delta):
 func _input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton:
 		if event.pressed:
-			follow_mouse = true
+			pass
+			# follow_mouse = true
 		elif not event.pressed:
 			follow_mouse = false
 

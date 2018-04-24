@@ -5,14 +5,13 @@ extends RigidBody2D
 # var b = "textvar"
 var current_ball = null
 export var power = 350
+var ball_match = RegEx.new()
 
 func _ready():
-	# Called every time the node is added to the scene.
-	# Initialization here
-	pass
+	ball_match.compile('NodeBall')
 
 func _ball_has_entered(ball_area):
-	if ball_area.get_parent().name == 'NodeBall':
+	if ball_match.search(ball_area.get_parent().name):
 		current_ball = ball_area.get_parent()
 
 

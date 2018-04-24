@@ -116,7 +116,6 @@ softness = 0.0
 [node name="NodeBall" parent="main_joint/rope_rigid_body" index="3" instance=ExtResource( 4 )]
 
 position = Vector2( 0.476257, 37.6297 )
-color = null
 
 [connection signal="input_event" from="main_joint/rope_rigid_body/wire_sprite/Area2D" to="." method="_on_Area2D_input_event"]
 

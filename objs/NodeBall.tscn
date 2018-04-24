@@ -40,7 +40,7 @@ angular_velocity = 0.0
 angular_damp = -1.0
 script = ExtResource( 1 )
 _sections_unfolded = [ "Transform" ]
-color = 3
+color = null
 
 [node name="RigidBody2D" type="CollisionShape2D" parent="." index="0"]
 

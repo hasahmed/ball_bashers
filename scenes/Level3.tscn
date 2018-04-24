@@ -23,7 +23,7 @@ __meta__ = {
 
 editor/display_folded = true
 script = ExtResource( 1 )
-next_level = "res://scenes/LevelSelect.tscn"
+next_level = "res://scenes/Level4.tscn"
 
 [node name="label_win" type="RichTextLabel" parent="Globals" index="0"]
 

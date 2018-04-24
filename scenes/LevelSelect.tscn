@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://scripts/level_select.gd" type="Script" id=1]
+[ext_resource path="res://objs/level_select.tscn" type="PackedScene" id=2]
 
 [node name="Node2D" type="Node2D"]
 
@@ -29,7 +30,7 @@ text = "Level 1"
 flat = false
 align = 1
 script = ExtResource( 1 )
-level = "res://scenes/Main.tscn"
+level = "res://scenes/Level1.tscn"
 
 [node name="level_2" type="Button" parent="." index="1"]
 
@@ -85,10 +86,48 @@ align = 1
 script = ExtResource( 1 )
 level = "res://scenes/Level3.tscn"
 
+[node name="level_4" type="Button" parent="." index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 450.0
+margin_top = 383.0
+margin_right = 580.0
+margin_bottom = 436.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "Level 4"
+flat = false
+align = 1
+script = ExtResource( 1 )
+level = "res://scenes/Level4.tscn"
+
+[node name="main_menu" parent="." index="4" instance=ExtResource( 2 )]
+
+margin_left = 451.0
+margin_top = 448.0
+margin_right = 580.0
+margin_bottom = 501.0
+text = "Main Menu"
+level = "res://scenes/StartScreen.tscn"
+
 [connection signal="button_up" from="level_1" to="level_1" method="_on_button_up"]
 
 [connection signal="button_up" from="level_2" to="level_2" method="_on_button_up"]
 
 [connection signal="button_up" from="level_3" to="level_3" method="_on_button_up"]
+
+[connection signal="button_up" from="level_4" to="level_4" method="_on_button_up"]
 
 
